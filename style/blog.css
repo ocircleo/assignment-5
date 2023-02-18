@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+width: 90%;
+margin: 0 auto;
+}
+
+.faq-section{
+    width: 90%;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) {
+    nav{
+        width: 98%;
+    }
+    .faq-section{
+        width: 100%;
+    }
+}

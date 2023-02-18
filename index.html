@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+     <!-- ====== Taill Wind css Used ====== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/scroll.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-blue-100 rounded-md flex justify-between mx-7 my-4 px-6 py-3">
+            <div class="nav-title">
+                <h2 class="capitalize text-3xl font-bold text-gray-700">Interactive </h2>
+                <h3 class="capitalize text-lg text-gray-500 font-semibold">Geometry Genius</h3>
+            </div>
+            <div class="">
+                <button id="blog-btn"
+                    class="capitalize font-bold mt-4 py-1 px-5 bg-blue-600 hover:bg-blue-800 active:bg-gray-300 rounded-md text-white inline-block">blog</button>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== End of header ====== -->
+
+    <div id="main" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-7">
+        <section class="col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-3">
+            <div id="grid-container"
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                <!-- ====== Triangle ====== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/triangle.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Triangle</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = 0.5 x b x h</p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="triangle" class=" calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full
+                        text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+                <!-- ====== Rectangle ===== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/rectangle.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Rectangle</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = w &times; i</p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="rectangle"
+                        class="calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+                <!-- ====== parallelogram ==== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col  p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/parallelogram.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Parallelogram</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = b &times; h</p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="parallelogram"
+                        class="calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+                <!-- ===== rhombus ===== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/rhombus.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Rhombus</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="rhombus"
+                        class="calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+                <!-- ====== pentagon ===== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/pentagon.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Pentagon</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = 0.5 &times; p &times; b</p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="pentagon"
+                        class="calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+                <!-- ====== ellipse ====== -->
+                <div
+                    class="grid-boxs col-span-1 flex flex-col p-6 border border-gray-200 justify-center items-center rounded-md">
+                    <img src="images/ellipse.png" alt="">
+                    <h2 class="font-bold py-4 capitalize text-lg text-gray-800">Ellipse</h2>
+                    <p class="text-xs py-1 text-gray-600">Area (A) = &pi;ab</p>
+                    <div class="inputs flex gap-2 mt-2 mb-8 items-center">
+                        <input type="number" name="" id="" placeholder="b"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                        <input type="number" name="" id="" placeholder="h"
+                            class="w-16 pl-1 text-gray-800 bg-gray-200 text-xs h-6 border border-gray-300 rounded-sm">
+                        <span class="text-xs text-gray-700">cm</span>
+                    </div>
+                    <button id="ellipse"
+                        class="calculate bg-blue-500 hover:bg-blue-700 active:bg-gray-300 font-bold capitalize w-full text-white rounded-md py-2">
+                        calculate</button>
+                </div>
+            </div>
+        </section>
+        <!-- ===== End of shapes calculation grid  ====== -->
+
+
+        <!-- ===== Area of calculation ====== -->
+        <div id="out-put-section"
+            class="col-span-1 flex flex-col gap-2 py-6 px-3 border border-gray-200 items-center rounded-md">
+            <h2 class='capitalize font-bold underline underline-offset-2 decoration-2 text-gray-800 pb-1'>Area
+                calcalation
+            </h2>
+            <div id="calculated-history" class="calculated-history flex flex-col text-xs text-gray-600">
+                <div id='calculated-history-section' class="calculated-history-section">
+                    <table id="tr-container">
+                        <!-- ====== Template table ===== -->
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

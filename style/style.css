@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-boxs {
+    height: auto;
+    background-color: white;
+}
+
+.grid-boxs img {
+    width: auto;
+    height: 180px;
+}
+ /* ===== To remove arrow signs from input  ===== */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* ====== Table template styling from here ===== */
+.calculated-history {
+    width: 100%;
+}
+
+.calculated-history-section {
+    margin: 8px 0;
+
+}
+
+.calculated-history-section table {
+    width: 100%;
+}
+
+.calculated-history-section table tr {
+    padding: 20px 0;
+}
+
+.calculated-history-section table tr td {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calculated-history-section table tr td:first-child {
+    text-align: left;
+    padding-left: 5px;
+    width: 35%;
+}
+
+.calculated-history-section table tr td:last-child {
+    width: 35%;
+}
+
+.mbtn {
+    background-color: rgb(77, 182, 247);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+}
+
+.mbtn:hover {
+    background-color: rgb(0, 145, 255);
+}

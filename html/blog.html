@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- ====== Taill Wind css used ====== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/scroll.css">
+    <link rel="stylesheet" href="../style//blog.css">
+</head>
+
+<body class="bg-blue-50">
+    <nav class="bg-orange-100 flex justify-between p-4 items-center my-6">
+        <div class="title">
+            <h2 class="font-bold text-gray-700  text-3xl">Interactive</h2>
+            <h3 class="font-bold text-gray-500 text-2xl ">faq about js and dom</h3>
+        </div>
+        <div>
+            <div class="home-buttom font-bold">
+                <button id="nav-btn"
+                    class="bg-orange-600 hover:bg-orange-400 active:bg-blue-200 text-white rounded-sm font-bold capitalize py-1 px-3">home</button>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== End of nav ==== -->
+    <section class="faq-section rounded-sm py-7 px-4 md:px-14 bg-orange-100">
+        <div class="faq">
+            <!-- ====== what is dom ====== -->
+            <div class="question">
+                <h2 class="text-3xl py-3 capitalize font-bold text-gray-800">what is dom and what is its importance ?
+                </h2>
+            </div>
+            <div
+                class="answer bg-orange-200 border-2 text-base font-semibold text-gray-800 border-orange-400 rounded-md px-4 py-6">
+                <h3>Document Object Model (DOM) is visual part of an website and its styles classes etc
+                    <br> works as an array like object, just like objects in js.
+                    <br> It can be manupulated by js.
+                    <br> A user interects with the website by dom
+                </h3>
+            </div>
+            <!-- ====== how to select element from dom ? ====== -->
+            <div class="question">
+                <h2 class="text-3xl py-3 capitalize font-bold text-gray-800">how to select element from dom ?</h2>
+            </div>
+            <div
+                class="answer bg-orange-200 border-2 text-base font-semibold text-gray-800 border-orange-400 rounded-md px-4 py-6">
+                <h3>There are multiple ways to select an element from dom,
+                    <br>
+                    some of them are- by id,class,tag name. <br>
+                    here is an simple example of how to select an element from dom
+                    <br>
+                    <em class="text-blue-400">const <span class="text-red-400">element</span>=
+                        document.getElementById(<span class="text-red-400">'salman'</span>);</em>
+                    <br>
+                    BY this line of code you can get an element by its id.
+                    <br>
+
+                    here are some ways to get the dom element
+                    <ol style="list-style: decimal; padding-left: 20px;">
+                        <li>querySelector()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>querySelectorAll()</li>
+                        <li>getElementsByClassName()</li>
+                    </ol>
+                </h3>
+            </div>
+            <!-- ====== what is event bubbble  ====== -->
+            <div class="question">
+                <h2 class="text-3xl py-3 capitalize font-bold text-gray-800">what is event bubbble ?</h2>
+            </div>
+            <div
+                class="answer bg-orange-200 border-2 text-base font-semibold text-gray-800 border-orange-400 rounded-md px-4 py-6">
+                <h3>Event bubble is one type of cheking system for function in js
+                    <br>
+                    when a function is trrigred and the function is succesfully executed
+                    the browser checks weather there are more function of the same name on the siblings
+                    or the paret node.
+                    This called event bubble.
+                </h3>
+            </div>
+            <!-- ====== what is callback function ====== -->
+            <div class="question">
+                <h2 class="text-3xl py-3 capitalize font-bold text-gray-800">what is callback function</h2>
+            </div>
+            <div
+                class="answer bg-orange-200 border-2 text-base font-semibold text-gray-800 border-orange-400 rounded-md px-4 py-6">
+                <h3>Call back function calls another function when the first function is succes fully executed, is
+                    called callbakc function.
+                    <br>
+                    Basiclly its a function that containes another function.
+                </h3>
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+        //To redirect to homepage
+        document.getElementById('nav-btn').addEventListener('click', function () {
+            window.location.href = '../index.html'
+        })
+    </script>
+</body>
+
+</html>
